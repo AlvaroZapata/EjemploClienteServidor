@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+
+div {
+	
+	background-color: yellow;
+	padding: 10 px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#hola {
+	
+	color: white;
+}
+#hola2 {
+	
+	color: white;
+}
+
+#fondo {
+	
+text-align: center;
+
+background-image: url(http://www.madridiario.es/fotos/1/132079_mercadonas39_kr_thumb_1280.jpg);
+
+}
