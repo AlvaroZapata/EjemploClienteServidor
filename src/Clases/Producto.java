@@ -2,7 +2,13 @@ package Clases;
 
 public class Producto {
 
-	public Producto(){
+		private String nombre;
+	
+	private double precio;
+	
+	private String descripcion;
+
+public Producto(){
 		
 	}
 	
@@ -15,15 +21,6 @@ public class Producto {
 		this.descripcion = descripcion;
 		
 	}
-
-
-
-	private String nombre;
-	
-	private double precio;
-	
-	private String descripcion;
-
 	public String getNombre() {
 		return nombre;
 	}

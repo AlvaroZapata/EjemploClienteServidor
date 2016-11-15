@@ -32,6 +32,13 @@ public class ProductoController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
+		
+	//GestorProductos.getProductos();
+	//GestorProductos.getProduscto(3);
+		
+		
+		
+	//llevar a GestorProducto	
 	ArrayList<Producto> producto = new ArrayList<>();
 	
 	Producto p;
@@ -43,14 +50,16 @@ public class ProductoController extends HttpServlet {
 		p=new Producto("Producto"+i, 10+i, "El mejor producto"+i);
 		producto.add(p);
 	}
-		
+	
+	//hasta aqui.
+	
 	String id = request.getParameter("producto");
 	
-	int id_entero = Integer.parseInt(id);
+	int id_entero = Integer.parseInt(id) -1;
 	
-	request.setAttribute("producto", " nombre del producto "+producto.get(id_entero).getNombre()+" descipcion general del producto "+producto.get(id_entero).getDescripcion()+" Precio "+producto.get(id_entero).getPrecio());	
-	//request.setAttribute("producto", " descipcion general del producto "+producto.get(id_entero).getDescripcion());
-	//request.setAttribute("producto", " Precio "+producto.get(id_entero).getPrecio());
+	
+	request.setAttribute("producto" ,producto.get(id_entero));
+
 	request.getRequestDispatcher("html/detalle.jsp").forward(request, response);	
 	
 	}

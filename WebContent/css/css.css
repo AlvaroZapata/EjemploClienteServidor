@@ -24,3 +24,17 @@ text-align: center;
 background-image: url(http://www.madridiario.es/fotos/1/132079_mercadonas39_kr_thumb_1280.jpg);
 
 }
+
+#aa {
+	text-align: left;
+	background-color: yellow;
+}
+#bb {
+	text-align: left;
+	background-color: yellow;
+}
+#cc {
+	text-align: left;
+	background-color: yellow;
+}
+
